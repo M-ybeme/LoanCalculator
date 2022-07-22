@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>App Name: Coding Challenge By Marlo Mayberry</title>
+    <title>Mortgage Calculator: Coding Challenge By Marlo Mayberry</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -58,11 +58,76 @@
     </nav>
     <main class="content">
         <div class="container mt-5">
-            <h1>APP UI GOES HERE</h1>
-            <input type="text" id="message" placeholder="Enter a Message"/>
-            <button id="btnSubmit" class="btn btn-primary"> Display message</button>
+            <div class="row text-center">
+                <div class="col col-4 border border-2 border-dark" id="loanUserData">
+                    <div>
+                        <label for="loanAmount" class="form-label">Loan Amount</label>
+                        <input type="number" class="form-control" id="userLoan" placeholder="25000">
+                    </div>
+                    <div>
+                        <label for="loanAmount" class="form-label">Term (Months)</label>
+                        <input type="number" class="form-control" id="userTerm" placeholder="60">
+                    </div>
+                    <div>
+                        <label for="loanAmount" class="form-label">Interest Rate</label>
+                        <input type="number" class="form-control" id="userRate" placeholder="5">
+                    </div>
+                    <button id="btnSubmit" class="btn btn-primary"> Calculate</button>
+                </div>
+                <div class="col col-8 border border-2 border-dark">
+                    <div class="row">
+                        <div class="col col-12">Your Monthly payments</div>
+                        <div class="col col-12" id="totalMonthlyPayment">0</div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-start">Total Principal</div>
+                        <div class="col text-end" id="totalPrincipal">0</div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-start">Total Interest</div>
+                        <div class="col text-end" id="totalInterest">0</div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-start">Total Cost</div>
+                        <div class="col text-end" id="totalCost">0</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <table class="table table-responsive table-striped" id="tableTemp">
+                    <thead>
+                        <tr>
+                            <th scope="col">Month</th>
+                            <th scope="col">Payment</th>
+                            <th scope="col">Principal</th>
+                            <th scope="col">Interest</th>
+                            <th scope="col">Total Interest</th>
+                            <th scope="col">Balance</th>
+                        </tr>
+                    </thead>
+                        <tbody id="body">
+                            
+                        </tbody>
+                        
+                    <tr>
+        
+                    </tr>
+                </table>
+            </div>
         </div>
     </main>
+    <!-- -----------------Templates------------------------- -->
+    <template id = tempData>
+        <tr>
+            <td data-id="month"></td>
+            <td data-id="payment"></td>
+            <td data-id="principal"></td>
+            <td data-id="interest"></td>
+            <td data-id="totalInterest"></td>
+            <td data-id="balance"></td>
+        </tr>
+    </template>
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -98,7 +163,7 @@
 
     <script src="/js/site.js"></script>
     <script>
-        document.getElementById("btnSubmit").addEventListener("click",getValue2);
+        document.getElementById("btnSubmit").addEventListener("click",getValues);
     </script>
     
 
