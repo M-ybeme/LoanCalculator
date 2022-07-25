@@ -5,6 +5,7 @@
     --mdm-secondary-color: #e2c957;
     --mdm-highlight-color:#6fcbc6;
     --mdm-nav-toggler-glow: #e2c957;
+    --mdm-tirtiary-color: #2c7384;
 
 }
 
@@ -20,8 +21,9 @@ body{
 }
 
 .bgimage{
-  background: -webkit-linear-gradient(to bottom, #00b09b, #96c93d); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #00b09b, #96c93d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #0f2027; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #0f2027, #203a43, #2c5364); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .content{
@@ -31,7 +33,7 @@ body{
 
 .footer{
     flex-shrink:0;
-    background-color:var(--mdm-primary-color);
+    background-color:var(--mdm-tirtiary-color);
     padding-right: 1rem;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -48,7 +50,7 @@ body{
 /* navbar overides */
 
 #mainNav{
-    background: var(--mdm-primary-color);
+    background: var(--mdm-tirtiary-color);
 }
 
 

@@ -93,8 +93,7 @@ function displayMonthPayment(loan, term, rate) {
   viewTotalCost.innerHTML = numberFormatter.format(cost);
 }
 
-function displayPayments(payments) {
-  let template = document.getElementById("tempData");
+function displayPayments(payments) { 
   let body = document.getElementById("body");
 
   body.innerHTML = "";
