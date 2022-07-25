@@ -59,7 +59,7 @@
     <main class="content">
         <div class="container mt-5">
             <div class="row text-center">
-                <div class="col col-4 border border-2 border-dark text-light" id="loanUserData">
+                <div class="col col-4 border border-2 border-light text-light displayBG" id="loanUserData">
                     <div>
                         <label for="loanAmount" class="form-label">Loan Amount</label>
                         <input type="number" class="form-control" id="userLoan" placeholder="25000">
@@ -74,22 +74,22 @@
                     </div>
                     <button id="btnSubmit" class="btn btn-primary"> Calculate</button>
                 </div>
-                <div class="col col-8 border border-2 border-dark text-light">
+                <div class="col col-8 border border-2 border-light text-light displayBG">
                     <div class="row">
-                        <div class="col col-12">Your Monthly payments</div>
-                        <div class="col col-12" id="totalMonthlyPayment">0</div>
+                        <div class="col col-12 displayNum">Your Monthly payments</div>
+                        <div class="col col-12 displayNum" id="totalMonthlyPayment">0</div>
                     </div>
                     <div class="row">
-                        <div class="col text-start">Total Principal</div>
-                        <div class="col text-end" id="totalPrincipal">0</div>
+                        <div class="col text-start displayNum">Total Principal</div>
+                        <div class="col text-end displayNum" id="totalPrincipal">0</div>
                     </div>
                     <div class="row">
                         <div class="col text-start">Total Interest</div>
-                        <div class="col text-end" id="totalInterest">0</div>
+                        <div class="col text-end displayNum" id="totalInterest">0</div>
                     </div>
                     <div class="row">
                         <div class="col text-start">Total Cost</div>
-                        <div class="col text-end" id="totalCost">0</div>
+                        <div class="col text-end displayNum" id="totalCost">0</div>
                     </div>
                 </div>
             </div>

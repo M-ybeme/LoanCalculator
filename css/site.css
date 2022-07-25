@@ -1,7 +1,7 @@
 :root{
     --mdm-primary-color: #2b6461;
     --mdm-dark-color: #202020;
-    --mdm-light-color: #eafff7;
+    --mdm-light-color: #98a4ac;
     --mdm-secondary-color: #e2c957;
     --mdm-highlight-color:#6fcbc6;
     --mdm-nav-toggler-glow: #e2c957;
@@ -68,6 +68,15 @@ body{
 
 /* navbar overides end */
 
+.displayBG{
+    background-color: var(--mdm-dark-color);
+}
+
+.displayNum{
+    text-size-adjust: 3rem !important;
+}
+
+
 .checklist{
     list-style-type: none;
 }
@@ -99,7 +108,7 @@ body{
 
 .btn-primary{
     color:white !important;
-    background-color:var(--mdm-primary-color) !important;
+    background-color:var(--mdm-light-color) !important;
     border-color:var(--mdm-secondary-color) !important;
 }
 
