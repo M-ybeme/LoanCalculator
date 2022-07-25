@@ -62,22 +62,26 @@
                 <div class="col col-4 border border-2 border-light text-light displayBG" id="loanUserData">
                     <div>
                         <label for="loanAmount" class="form-label">Loan Amount</label>
-                        <input type="number" class="form-control" id="userLoan" placeholder="25000">
+                        <input type="number" class="form-control" id="userLoan" value="25000">
                     </div>
                     <div>
                         <label for="loanAmount" class="form-label">Term (Months)</label>
-                        <input type="number" class="form-control" id="userTerm" placeholder="60">
+                        <input type="number" class="form-control" id="userTerm" value="60">
                     </div>
                     <div>
                         <label for="loanAmount" class="form-label">Interest Rate</label>
-                        <input type="number" class="form-control" id="userRate" placeholder="5">
+                        <input type="number" class="form-control" id="userRate" value="5">
                     </div>
+                    <div class="text-start py-2">
                     <button id="btnSubmit" class="btn btn-primary"> Calculate</button>
+                    </div>
                 </div>
                 <div class="col col-8 border border-2 border-light text-light displayBG">
                     <div class="row">
-                        <div class="col col-12 displayNum">Your Monthly payments</div>
-                        <div class="col col-12 displayNum" id="totalMonthlyPayment">0</div>
+                        <div class="col col-12 displayNum">
+                            <h3>Your Monthly payments </h3></div>
+                        <div class="col col-12 displayNum">
+                            <h3 id="totalMonthlyPayment">0</h3></div>
                     </div>
                     <div class="row">
                         <div class="col text-start displayNum">Total Principal</div>
